@@ -1,0 +1,104 @@
+/* Estilos para pantalla, margin se usa dejar un area entre la hoja y el body */
+body {
+    font-family: Arial, sans-serif;
+/* Margen entre el borde y la ventana del navegador */   
+    margin: 15px;
+/*Color del texto*/
+    color: #333;
+}
+/* ficha es el bloque que representa el contenido en div*/
+.ficha {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid black;
+    max-width: 210mm;
+}
+
+table {
+/*Para que el ancho de la tabla ocupe todo el espacio horizontal:*/    
+    width: 100%;
+/*Para que las columnas queden del mismo tamaño:*/
+    table-layout: fixed;
+/*Para que los bordes de los campos de las tablas se fusionen. Por defecto, los bordes quedan dobles:*/
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.logo {
+/* Logo: 100% para que se ajuste al ancho de la pantalla */
+    width: 100%;
+    height: auto;
+}
+
+.dimensiones {
+/*display: block sirve para que la imagen se comporte como un bloque para centrar con margin*/
+    display: block; 
+    width: 50%;
+    height: auto;
+    margin: 0 auto; 
+}
+
+.titulo {
+    font-size: 15pt;
+    background-color: gray;
+    padding: 8px 12px;             /* relleno para que no quede el margen pegado al texto */
+    border-radius: 4px;            /* cuadrado con bordes curvos */
+    color: black;                /* color del texto */   
+    border: 2px solid black;     /* color del borde */
+}
+
+.subtitulo {
+/*display: block sirve para que la imagen se comporte como un bloque para centrar con margin*/
+    font-size: 10pt;
+    background-color: rgb(200, 200, 200);
+    padding: 8px 12px;             /* relleno para que no quede pegado al texto padding: 8px 12px;*/
+    border-radius: 4px;            /* cuadrado con bordes curvos */
+    color: black;
+    border: 2px solid black;  
+}
+
+.boton {
+    display: block;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;               /* cuando se pasa el mouse por encima cambia de cursor a una mano */
+}
+
+/* Estilos para impresión carta */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 279mm;
+        width: 216mm;
+    }
+    
+    .ficha {
+        size: 216mm 279mm;            /* Carta: 216×279 mm */
+        margin: 5mm;                 /* márgenes 10mm todo alrededor */
+    }
+/* Ocultar botón cuando se va a imprimir */    
+    .boton {
+        display: none;
+    }
+  
+    table {
+        font-size: 10pt;
+    }
+    
+    h1{
+/*Al imprimir, se evita el salto de pagina despues del siguiente elemento:*/
+        page-break-after: avoid;
+    }
+    h2 {
+        page-break-after: avoid;
+    }
+
+}

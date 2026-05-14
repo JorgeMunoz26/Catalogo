@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+<!--width=device-width: Hace que el ancho de la página coincida con el ancho real de la pantalla del dispositivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica - Acople plano 3/4</title>
+<!--Conexión con el archivo CSS-->
+    <link rel="stylesheet" href="style.css">
+<!--Mostrar ícono en la pestaña-->
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+</head>
+<body>
+<!--NOTA: el botón de impresión está en el body pero no en div. Sin el botón no se necesita el div-->
+    <div class="ficha">
+        <header>
+<!--Logo de la empresa, class="logo" permite en CSS ajustar-->
+            <img src="Logo_Marcam _DS.jpeg" alt="Logo" class="logo">
+<!--<br> es equivalente a ENTER en un procesador de palabras-->
+            <h1 class="titulo">ACOPLE PLANO 3/4" SS304<br>Modelo: LLFF6SP</h1>
+            <h2 class="subtitulo">FICHA TECNICA</h2>
+<!--Producto, class="dimensiones" permite en CSS ajustar-->
+            <img src="Dimensiones.bmp" alt="Dimensiones" class="dimensiones">
+        </header>
+        
+        <section>
+            <h2 class="subtitulo">Descripción</h2>
+                <p>Los acoples de cara plana son un tipo de acople hidraúlico de desconexión rápida
+                diseñados para minimizar la fuga de líquido y el ingreso de contaminantes
+                durante el acoplamiento. Su diseño plano en el punto de conexión los hace 
+                altamente efectivos en aplicaciones donde la limpieza y la minimización de fugas
+                es indispensable.</p>
+        </section>
+
+        <section>
+            <h2 class="subtitulo">Especificaciones Técnicas</h2>
+            <table>
+<!--La propiedad <sub></sub> sirve para colocar subindices en linea-->
+<!--La propiedad align="center" sirve para colocar el texto centrado en el campo de la tabla-->
+                <tr><td>Estándar</td> <td align="center">ISO 16028</td> <td align="center">L<sub>1</sub></td> <td align="center">143</td></tr> 
+                <tr><td>Rosca</td> <td align="center">3/4" NPT</td> <td align="center">L<sub>2</sub></td> <td align="center">86</td></tr>
+                <tr><td>Presión (Oper./Máx.)</td> <td align="center">350/1440 BAR</td> <td align="center">L<sub>3</sub></td> <td align="center">74,5</td></tr>
+                <tr><td>Flujo de diseño</td> <td align="center">74 l/m</td> <td align="center">S<sub>1</sub></td> <td align="center">36</td></tr>
+                <tr><td>Perdida por goteo</td> <td align="center">0,015 cc</td> <td align="center">S<sub>2</sub></td> <td align="center">36</td></tr>
+                <tr><td>Temperatura de operación</td> <td align="center">-20 a 100 ºC</td> <td align="center">D</td> <td align="center">42</td></tr>
+                <tr><td>Material/Sello</td> <td align="center">SS304/NBR</td> <td align="center">Marca</td> <td align="center">Fluid Tech Mining Co.</td></tr>                                                                
+            </table>
+        </section>
+        <section>
+            <h2 class="subtitulo">Observaciones</h2>
+            <p>No usar en salmueras ni en equipos desaladores, verificar compatibilidad de fluidos con SS304.<br>
+                No maniobrar en operación de bombeo, debe despresurizarse el sistema previamente.<br>
+                Durante su manipulación se recomienda limpiar y retirar contaminantes de las superficies planas para alargar la vida del circuito hidráulico.</p>            
+        </section>
+        <footer>
+            <p>&copy; 2026 MARCAM MDE SAS. Todos los derechos reservados. Contacto: <a href="mailto:acoples.marcam@gmail.com">acoples.marcam@gmail.com</a></p>
+        </footer>
+        
+    </div>
+<!--A continuación se genera un botón para imprimir que desaparece cuando se imprime-->
+    <button class="boton" onclick="window.print()">Imprimir Ficha</button>
+</body>
+</html>
