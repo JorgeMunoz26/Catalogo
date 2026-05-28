@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+    <link rel="stylesheet" href="Registro.css"
+</head>
+<body>
+    <section class="form-login">
+        <h5>REGISTRO</h5>
+        <input class="controls" type="text" name="NOMBRE" value="" placeholder="NOMBRE">
+        <fieldset class="select-box">
+            <legend>SELECCIONE SU GENERO</legend>
+            <div>
+                <input type="radio" id="FEMENINO" name="genero" value="FEMENINO">
+                <label for="FEMENINO">FEMENINO</label>
+            </div>
+            <div>
+                <input type="radio" id="MASCULINO" name="genero" value="MASCULINO">
+                <label for="MASCULINO">MASCULINO</label>
+            </div>
+        </fieldset>
+        <fieldset class="select-box">
+            <legend>SELECCIONE SU FECHA DE NACIMIENTO</legend>
+            <div>
+                <input class="calendar" type="date" id="fecha" name="fecha">
+            </div>
+        </fieldset>        
+
+        <input class="controls" type="text" name="CIUDAD" value="" placeholder="CIUDAD">
+        <input class="controls" type="text" name="DIRECCION" value="" placeholder="DIRECCION">
+        <input class="controls" type="text" name="CELULAR" value="" placeholder="CELULAR">
+        <input class="controls" type="text" name="CORREO ELECTRONICO" value="" placeholder="CORREO ELECTRONICO">              
+        <input class="controls" type="text" name="USUARIO" value="" placeholder="USUARIO">
+        <input class="controls" type="password" name="CONTRASENA" value="" placeholder="CONTRASEÑA">
+        <input class="controls" type="password" name="CONFIRMAR_CONTRASENA" value="" placeholder="CONFIRMAR CONTRASEÑA">
+        <input class="buttons" type="submit" name="" value="REGISTRAR">
+        <input class="buttons" type="submit" name="" value="REGRESAR" onclick="window.location.href='Login.html';">
+        <p><a href="Catalogo.html">¿Desea ingresar sin registrarse?</a></p>
+    </section>
+</body>
+</html>

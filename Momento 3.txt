@@ -1,0 +1,11 @@
+Login, register, home.
+•	Explicación de Flexbox/Framework: Exponer cómo se usó Flexbox para alinear el menú de navegación y cómo se integró el Framework (Tailwind) en una sección específica.
+•	Demostrar cómo el sitio cambia su layout en diferentes tamaños de pantalla (móvil, tablet, desktop) usando tailwind
+•	El sitio web completamente estilizado, 100% responsivo y utilizando animaciones/transiciones básicas. Debe integrar componentes del Framework elegido.
+•	Navegación entre las páginas a través de botones que tengan estilos.
+
+Criterios
+•	Comprensión de Flexbox (propiedades del contenedor e ítems) y la sintaxis del Framework.
+•	Habilidad para usar reglas @media y aplicar diferentes estilos según el ancho de pantalla.
+•	Dominio de las herramientas (HTML, CSS), diseño UX/UI básico, y producto listo para producción (o simulacro).
+•	Producto Final del Submódulo: Interfaz web inicial con formularios información, diseño responsivo y navegación básica.
